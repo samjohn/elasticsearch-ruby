@@ -43,12 +43,12 @@ module Elasticsearch
         #                               document: {
         #                                 properties: {
         #                                   title: {
-        #                                     type: 'multi_field',
+        #                                     type: 'text',
         #                                     fields: {
-        #                                         title:  { type: 'string', analyzer: 'snowball' },
-        #                                         exact:  { type: 'string', analyzer: 'keyword' },
-        #                                         ngram:  { type: 'string',
-        #                                                   index_analyzer: 'ngram',
+        #                                         title:  { type: 'text', analyzer: 'snowball' },
+        #                                         exact:  { type: 'text', analyzer: 'keyword' },
+        #                                         ngram:  { type: 'text',
+        #                                                   analyzer: 'ngram',
         #                                                   search_analyzer: 'ngram_search'
         #                                         }
         #                                     }
